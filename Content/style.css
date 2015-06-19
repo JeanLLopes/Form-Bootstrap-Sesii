@@ -1,0 +1,6 @@
+﻿body{background-color: rgb(232, 232, 232)}
+h4{ color: rgb(23, 156, 199);text-transform: uppercase;font-weight: 900}
+h5{ color: white;padding: 5px;text-transform: uppercase;background-color: rgb(23, 156, 199); font-stretch: condensed;}
+label {color: gray;text-transform: capitalize;-webkit-font-stretch: condensed;-moz-font-stretch: condensed;-ms-font-stretch: condensed;-o-font-stretch: condensed;font-stretch: condensed;font-size: 17px;}
+#sectionAcademicos, #sectionMsgSuccessInformacoesPessoais, #sectionMsgAcademicos{ display: none;}
+#sectionInformacoesPessoais{display: block}

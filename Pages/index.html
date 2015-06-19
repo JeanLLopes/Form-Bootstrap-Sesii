@@ -1,0 +1,354 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Formulario de Cadastro</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h4>ficha de Inscrição</h4>
+        </header>
+        <section id="sectionMsgSuccessInformacoesPessoais">
+            <div class="alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                Dados Pessoais do Aluno Preenchidos com Sucesso.
+            </div>
+        </section>
+        <section id="sectionMsgAcademicos">
+            <div class="alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Parabéns... </strong>Informações Academicas Preenchidos com sucesso.
+                <br />
+                <a href="#" class="alert-link">Caso deseje editar as informações clique aqui</a>
+            </div>
+        </section>
+
+        <form>
+            <section id="sectionInformacoesPessoais">
+                <section>
+                    <hr />
+                    <h5>Informações Pessoais</h5>
+                    <div class="row">
+                        <div class="form-group col-md-7">
+                            <label>Nome:</label>
+                            <input type="text" class="form-control " name="inputNome" id="inputNome" placeholder="Nome" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-7">
+                            <label>Nome do Meio:</label>
+                            <input type="text" class="form-control " name="inputNomedoMeio" id="inputNomedoMeio" placeholder="Nome do Meio" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-7">
+                            <label>Sobrenome:</label>
+                            <input type="text" class="form-control " name="inputSobrenome" id="inputSobrenome" placeholder="Sobrenome" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-7">
+                            <label>Nome Preferido:</label>
+                            <input type="text" class="form-control " name="inputNomePreferido" id="inputNomePreferido" placeholder="Nome Preferido" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-7">
+                            <label>Data de Nascimento:</label>
+                            <input type="text" class="form-control " name="inputDatadeNascimento" id="inputDatadeNascimento" placeholder="Data de Nascimento" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label>Estado Civil:</label>
+                            <select class="form-control" name="inputEstadoCivil" id="inputEstadoCivil" placeholder="Estado Civil">
+                                <option value="Solteiro(a)">Solteiro(a)</option>
+                                <option value="Casado(a)">Casado(a)</option>
+                                <option value="Divorciado(a)">Divorciado(a)</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Sexo:</label>
+                            <select class="form-control" name="inputSexo" id="inputSexo" placeholder="Sexo">
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <hr />
+                    <h5>Telefone</h5>
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label>Tipo Telefone:</label>
+                            <select class="form-control" name="inputTipoTelefone" id="inputTipoTelefone" placeholder="Tipo Telefone">
+                                <option value="Comercial">Comercial</option>
+                                <option value="Residencial">Residencial</option>
+                                <option value="Celular">Celular</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Telefone:</label>
+                            <input type="text" class="form-control " name="inputTelefone" id="inputTelefone" placeholder="Telefone" max="13" />
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label>Ramal:</label>
+                            <input type="text" class="form-control " name="inputRamal" id="inputRamal" placeholder="Ramal" max="4" />
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Prefixo Internacional:</label>
+                            <input type="text" class="form-control " name="inputPrefixoInternacional" id="inputPrefixoInternacional" placeholder="Prefixo Internacional" max="4" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-3">
+                            <button class="btn btn-info">Adicionar</button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <hr />
+                    <h5>E-Mail</h5>
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label>Tipo Email:</label>
+                            <select class="form-control" name="inputTipoEmail" id="inputTipoEmail" placeholder="Tipo Email">
+                                <option value="Particular">Particular</option>
+                                <option value="Comercial">Comercial</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label>E-Mail:</label>
+                            <input type="text" class="form-control " name="inputEMail" id="inputEMail" placeholder="E-Mail" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-3">
+                            <button class="btn btn-info">Adicionar</button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <hr />
+                    <h5>Endereços</h5>
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label>Tipo Endereço:</label>
+                            <select class="form-control" name="inputTipoEndereco" id="inputTipoEndereco" placeholder="Tipo Endereço">
+                                <option value="Residencial">Residencial</option>
+                                <option value="Comercial">Comercial</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label>Pais:</label>
+                            <output>Brasil</output>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-5">
+                            <label>Tipo de Local:</label>
+                            <select class="form-control" name="inputTipodeLocal" id="inputTipodeLocal" placeholder="Tipo de Local">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>CEP:</label>
+                            <input type="text" class="form-control " name="inputcep" id="inputcep" placeholder="Cep" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-5">
+                            <label>Rua:</label>
+                            <input type="text" class="form-control " name="inputRua" id="inputRua" placeholder="Rua" />
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Número:</label>
+                            <input type="text" class="form-control " name="inputNumero" id="inputNumero" placeholder="Número" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-7">
+                            <label>Complemento:</label>
+                            <input type="text" class="form-control " name="inputComplemento" id="inputComplemento" placeholder="Complemento" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-7">
+                            <label>Complemento 2:</label>
+                            <input type="text" class="form-control " name="inputComplemento2" id="inputComplemento2" placeholder="Complemento 2" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-7">
+                            <label>Bairro:</label>
+                            <input type="text" class="form-control " name="inputBairro" id="inputBairro" placeholder="Bairro" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-5">
+                            <label>Cidade:</label>
+                            <input type="text" class="form-control " name="inputCidade" id="inputCidade" placeholder="Cidade" />
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Estado:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control " name="inputEstado" id="inputEstado" placeholder="Estado" />
+                                <span class="input-group-addon" id="start-search" data-toggle="modal" data-target="#modalResultado"><span class="glyphicon glyphicon-search"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-1 right">
+                            <button type="button" class="btn btn-info" id="btnProsseguir">Prosseguir</button>
+                        </div>
+                    </div>
+
+                </section>
+
+            </section>
+            <section id="sectionAcademicos">
+                <section>
+                    <hr />
+                    <h5>Acadêmicas</h5>
+                    <div class="row">
+                        <div class="form-group col-md-5">
+                            <label>Curso:</label>
+                            <select class="form-control" name="inputCurso" id="inputCurso" placeholder="Curso">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Cod. Curso:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control " name="inputCodCurso" id="inputCodCurso" placeholder="Cod. Curso" />
+                                <span class="input-group-addon" id="start-CodCurso" data-toggle="modal" data-target="#modalResultado"><span class="glyphicon glyphicon-search"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label>Campus:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control " name="inputCampus" id="inputCampus" placeholder="Campus" />
+                                <span class="input-group-addon" id="start-Campus" data-toggle="modal" data-target="#modalResultado"><span class="glyphicon glyphicon-search"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label>&nbsp;</label>
+                            <input type="text" class="form-control " name="inputCampus" id="inputCampus" placeholder="Campus" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label>Turno Academico:</label>
+                            <select class="form-control" name="inputTurnoAcademico" id="inputTurnoAcademico" placeholder="Turno Academico">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label>Carreira Academico:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control " name="inputCarreiraAcademico" id="inputCarreiraAcademico" placeholder="Carreira" />
+                                <span class="input-group-addon" id="start-Campus" data-toggle="modal" data-target="#modalResultado"><span class="glyphicon glyphicon-search"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label>&nbsp;</label>
+                            <input type="text" class="form-control " name="inputCampus" id="inputCampus" placeholder="Carreira Academico" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label>Tipo de Inscrição:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control " name="inputTipodeInscricao" id="inputTipodeInscricao" placeholder="Tipo de Inscrição" />
+                                <span class="input-group-addon" id="start-TipodeInscricao" data-toggle="modal" data-target="#modalResultado"><span class="glyphicon glyphicon-search"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Tipo de Admissão:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control " name="inputTipodeAdmisso" id="inputTipodeAdmisso" placeholder="Tipo de Admissão" />
+                                <span class="input-group-addon" id="start-TipodeAdmisso" data-toggle="modal" data-target="#modalResultado"><span class="glyphicon glyphicon-search"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-5">
+                            <label>N° Incrição no ENEM</label>
+                            <input type="text" class="form-control " name="inputENEM" id="inputENEM" placeholder="N° Incrição no ENEM" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-5">
+                            <label>Edital</label>
+                            <br/>
+                            <input type="checkbox"> Li e concordo com o <a href="#">Edital</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-5">
+                            <button type="button" class="btn btn-info" id="btnConcluir">Concluir</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </form>
+        
+        <section id="sectionModal">
+            <div class="modal fade" id="modalResultado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Resultado Seleção</h4>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Seleção</th>
+                                        <th>Opção</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Seleção 1</td>
+                                        <td>Opção 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seleção 2</td>
+                                        <td>Opção 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seleção 3</td>
+                                        <td>Opção 3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Selecionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/bootbox.js"></script>
+    <script src="../Scripts/script.js"></script>
+</body>
+</html>
